@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
     }
-
+    //Funciones en las cuales si no da error no cambiando la visibilidad de nuestra etiqueta xml
     private void showJsonData() {
         errorMsgDisplay.setVisibility(View.INVISIBLE);
         searchResults.setVisibility(View.VISIBLE);
@@ -107,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
         searchBox = (EditText) findViewById(R.id.search_box);
         urlDisplay = (TextView) findViewById(R.id.url_display);
         searchResults = (TextView) findViewById(R.id.heroes_search_results);
+        //Recogemos el xml donde va el mensaje de error.
         errorMsgDisplay = (TextView) findViewById(R.id.error_message_display);
         requestProgress = (ProgressBar) findViewById(R.id.request_progress);
     }
