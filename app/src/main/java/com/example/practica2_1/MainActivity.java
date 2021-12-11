@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPreExecute() {
+            //Una vex ejecuta ponemos visualizamos el indicador de progreso
             requestProgress.setVisibility(View.VISIBLE);
 
         }
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String s) {
+            //una vez nos devuelva los datos cambiamos a invisible.
             requestProgress.setVisibility(View.INVISIBLE);
 
             showJsonData();
@@ -109,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
         searchResults = (TextView) findViewById(R.id.heroes_search_results);
         //Recogemos el xml donde va el mensaje de error.
         errorMsgDisplay = (TextView) findViewById(R.id.error_message_display);
+        //Ponemos la etiqueta que creamos en el xml.
         requestProgress = (ProgressBar) findViewById(R.id.request_progress);
     }
 }

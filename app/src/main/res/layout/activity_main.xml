@@ -44,6 +44,7 @@
             android:padding="16dp"
             android:text="@string/error_message"
             android:visibility="invisible"/>
+
         <ProgressBar
             android:id="@+id/request_progress"
             android:visibility="invisible"
