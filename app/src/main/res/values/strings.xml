@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SuperHero APP</string>
+    <string name="item1_name">Launch</string>
+    <string name="launch_pressed">launch_Pressed</string>
+    <string name="error_message"> Se ha producido un error</string>
+    <string name="item2_name">Clear</string>
+</resources>
