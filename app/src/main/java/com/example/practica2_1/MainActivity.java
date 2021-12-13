@@ -54,8 +54,13 @@ public class MainActivity extends AppCompatActivity {
             //una vez nos devuelva los datos cambiamos a invisible.
             requestProgress.setVisibility(View.INVISIBLE);
 
-            showJsonData();
-            searchResults.setText(s);
+            if(s != null){
+                showJsonData();
+                searchResults.setText(s);
+            }else{
+                showErrorMsg();
+            }
+
 
         }
     }
